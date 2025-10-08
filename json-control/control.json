@@ -1,5 +1,5 @@
 {
-  "name": "omnis-vue",
+  "name": "omnis_vue",
   "flags": {
     "beforeafterevents": false,
     "beforeevents": false,
