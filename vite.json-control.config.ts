@@ -40,7 +40,7 @@ export default defineConfig({
         ctrl_omnis_vue: fileURLToPath(new URL("./src/json_control_main.ts", import.meta.url))
       },
       output: {
-        format: "umd",
+        format: "umd", // Must be UMD to prevent multiple dependencies from colliding when imported into Omnis
         manualChunks: false,
         inlineDynamicImports: true,
         assetFileNames: (assetInfo) => {
