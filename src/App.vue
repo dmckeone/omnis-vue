@@ -20,7 +20,7 @@ const onUserEvent = (message: string) => {
   <div class="h-full min-h-screen">
     <div class="h-[97vh] m-2">
       <HelloWorld :name="name" />
-      <button @click="() => onUserEvent('Hello!')" />
+      <button @click="() => onUserEvent('Hello!')">Click me!</button>
     </div>
   </div>
 </template>

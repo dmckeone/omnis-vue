@@ -62,7 +62,7 @@
 		"tooltip": "",
 		"tooltippos": "kTooltipPosMouse",
 		"top": 9,
-		"urlorcontrolname": "omnis-dashboard",
+		"urlorcontrolname": "omnis-vue",
 		"userinfo": "",
 		"visible": true,
 		"width": 345

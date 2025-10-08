@@ -8,7 +8,8 @@
 		],
 		"lvardefs": [
 
-		]
+		],
+		"empty": true
 	},
 	{
 		"name": "$eventclient",
@@ -18,13 +19,7 @@
 
 		],
 		"lvardefs": [
-			{
-				"name": "payload",
-				"order": 1,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			}
+
 		]
 	}
 ]

@@ -1,4 +1,0 @@
-
-On evControlEvent
-	Calculate payload as pPayload
-	Do $cinst.$showmessage(con("User Event: ",pEvent," ",payload))

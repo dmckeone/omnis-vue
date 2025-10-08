@@ -1,0 +1,2 @@
+On evControlEvent
+	Do $cinst.$showmessage(pPayload,pEvent)

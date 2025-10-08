@@ -2,9 +2,9 @@
 	"classtype": "kRemoteForm",
 	"omnisversion": "11.2",
 	"omnisbuild": 990040162,
-	"internalversion": 412,
+	"internalversion": 14,
 	"designtaskname": "rtWeb",
-	"nextident": 1020,
+	"nextident": 1003,
 	"lastgroupident": 0,
 	"cvardefs": [
 
@@ -35,8 +35,8 @@
 		},
 		"componenttype": "kCompStoreHidden",
 		"contextmenu": "",
-		"createdate": "2025-05-21 12:40:38",
-		"currentlayoutbreakpoint": 1024,
+		"createdate": "2025-10-08 14:54:45",
+		"currentlayoutbreakpoint": 320,
 		"defaultappearance": "kAppearanceiOS",
 		"desc": "",
 		"designguides": "",
@@ -51,11 +51,11 @@
 		"horzscroll": false,
 		"inheritedorder": 0,
 		"issupercomponent": false,
-		"layoutbreakpoints": "1024,1600",
+		"layoutbreakpoints": "320,768",
 		"layouttype": "kLayoutTypeResponsive",
-		"left": 271,
+		"left": 204,
 		"menulineheight": 44,
-		"moddate": "2025-10-08 12:56:24",
+		"moddate": "2025-10-08 17:23:38",
 		"okkeyobject": "",
 		"serverlessclient": false,
 		"showascheckedout": false,
@@ -66,7 +66,7 @@
 			"type": 0,
 			"calc": "New remote form"
 		},
-		"top": 274,
+		"top": 200,
 		"userinfo": "",
 		"vcsrevision": 0,
 		"version": "",
@@ -74,13 +74,13 @@
 		"vertscroll": false
 	},
 	"layout": {
-		"width": 1681,
-		"height": 787,
-		"1024": {
+		"width": 904,
+		"height": 354,
+		"320": {
 			"height": 0,
 			"padding": 2
 		},
-		"1600": {
+		"768": {
 			"height": 0,
 			"padding": 2
 		}

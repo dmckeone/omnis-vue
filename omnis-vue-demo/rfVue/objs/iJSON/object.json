@@ -1,9 +1,9 @@
 {
-	"ident": 1019,
+	"ident": 1002,
 	"order": 1,
 	"objtype": "kComponent",
 	"componentlib": "jsControls",
-	"componentctrl": "omnis_dashboard",
+	"componentctrl": "omnis_vue",
 	"properties": {
 		"active": true,
 		"alpha": 255,
@@ -13,7 +13,7 @@
 		"componentinfo": {
 
 		},
-		"contextmenu": "a",
+		"contextmenu": "",
 		"cssclassname": "",
 		"dataname": "iJSON",
 		"desgroup": 0,
@@ -21,10 +21,10 @@
 		"deslock": false,
 		"disabledefaultcontextmenu": false,
 		"disablesystemfocus": false,
-		"dropmode": "kAcceptControl",
+		"dropmode": "kAcceptNone",
 		"effect": "kJSborderNone",
 		"enabled": true,
-		"events": "evControlOpened,evControlEvent",
+		"events": "evControlEvent",
 		"fieldstyle": "",
 		"nexttabobject": "",
 		"objlink": 0,
@@ -34,25 +34,25 @@
 		"sidepanelmode": "kSidePanelModeNone",
 		"tooltip": "",
 		"userinfo": "",
-		"vertscroll": true,
+		"vertscroll": false,
 		"visible": true
 	},
 	"layout": {
-		"1024": {
+		"320": {
 			"left": 8,
-			"top": 10,
-			"width": 1001,
-			"height": 511,
+			"top": 8,
+			"width": 303,
+			"height": 101,
 			"dragborder": false,
 			"edgefloat": "kEFrightBottom",
 			"errortextpos": "kJSErrorTextPosUnder",
 			"visible": true
 		},
-		"1600": {
-			"left": 414,
-			"top": 114,
-			"width": 772,
-			"height": 511,
+		"768": {
+			"left": 16,
+			"top": 12,
+			"width": 742,
+			"height": 186,
 			"dragborder": false,
 			"edgefloat": "kEFrightBottom",
 			"errortextpos": "kJSErrorTextPosUnder",

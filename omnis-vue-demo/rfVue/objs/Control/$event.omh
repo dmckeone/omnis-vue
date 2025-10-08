@@ -1,2 +1,0 @@
-On evControlOpened
-	Send to trace log Opened Dashboard #[pId]
