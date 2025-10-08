@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@plugin '@tailwindcss/aspect-ratio';
+@plugin "daisyui" {
+  themes: all;
+}

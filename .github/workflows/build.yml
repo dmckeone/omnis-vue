@@ -1,0 +1,44 @@
+name: Build Controls
+
+on: [push]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          version: 10
+          run_install: false
+      - name: Bundle Component with Vite
+        uses: actions/setup-node@v3
+        with:
+          node-version: "24"
+          cache: "pnpm"
+      - run: |
+          pnpm install --frozen-lockfile
+          pnpm run --if-present build 
+          mv dist omnis-vue
+          tar -zcvf omnis-vue.tar.gz omnis-vue/
+      - name: Upload Omnis Studio HTML Control artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: omnis-vue
+          path: omnis-vue.tar.gz
+      - name: Extract package.json version
+        if: startsWith(github.ref, 'refs/tags/')
+        id: package-version
+        uses: martinbeentjes/npm-get-version-action@v1.3.1
+      - name: Build release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v1
+        with:
+          name: v${{ steps.package-version.outputs.current-version }}
+          files: |
+            omnis-vue.tar.gz
+            LICENSE

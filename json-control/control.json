@@ -1,0 +1,50 @@
+{
+  "name": "omnis-vue",
+  "flags": {
+    "beforeafterevents": false,
+    "beforeevents": false,
+    "backcolorandalpha": true,
+    "noenabled": false,
+    "transparentbackground": false,
+    "hasdefaultborder": true,
+    "hasdisplayformat": false,
+    "hasdragevents": false
+  },
+  "customtabname": "Custom",
+  "standardproperties": ["bordercolor", "dataname", "effect", "vertscroll"],
+  "properties": {},
+  "constants": {},
+  "events": {
+    "evControlOpened": {
+      "id": 1000,
+      "desc": "Event sent when control is fully opened",
+      "parameters": [
+        {
+          "name": "Id",
+          "type": "character",
+          "desc": "Id of the control"
+        }
+      ]
+    },
+    "evControlEvent": {
+      "id": 1001,
+      "desc": "Event sent by underlying control (in the style of HTML Controls)",
+      "parameters": [
+        {
+          "name": "Event",
+          "type": "character",
+          "desc": "Name of the event"
+        },
+        {
+          "name": "Payload",
+          "type": "character",
+          "desc": "JSON content from the component"
+        }
+      ]
+    }
+  },
+  "methods": {},
+  "html": {
+    "template": "<div %o %s data-props='%p' data-mvprops='%m'></div>"
+  }
+}

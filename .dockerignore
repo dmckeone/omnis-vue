@@ -1,0 +1,12 @@
+# Build Products
+bin
+build
+dist
+*.local
+
+# Omnis
+omnis-vue-demo
+*.lbs
+
+# Node Dependences
+node_modules
