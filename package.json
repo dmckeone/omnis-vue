@@ -1,6 +1,6 @@
 {
   "name": "omnis-vue",
-  "version": "0.2.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "build": "pnpm run type-check && vite build && mkdir dist/omnis-vue && mv dist/omnis-vue.html dist/omnis-vue/omnis-vue.htm",
